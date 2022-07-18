@@ -1,7 +1,7 @@
 fastapi==0.75.1
 PyYAML==6.0
 slowapi==0.1.5
-httpx==0.22.0
+httpx==0.23.0
 opencv-python==4.5.5.64
 scikit-image==0.19.2
 uvicorn==0.17.6
