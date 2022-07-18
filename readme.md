@@ -3,11 +3,11 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/ryan5454/coursehero-api/stargazers">
-        <img src="https://img.shields.io/github/stars/ryan5454/coursehero-api?style=social">
+    <a href="https://github.com/ryan5453/coursehero-api/stargazers">
+        <img src="https://img.shields.io/github/stars/ryan5453/coursehero-api?style=social">
     </a>
-    <a href="https://github.com/ryan5454/coursehero-api/blob/main/LICENSE">
-        <img src="https://img.shields.io/github/license/ryan5454/coursehero-api">
+    <a href="https://github.com/ryan5453/coursehero-api/blob/main/LICENSE">
+        <img src="https://img.shields.io/github/license/ryan5453/coursehero-api">
     </a>
     <a href="https://python.org/">
         <img src="https://img.shields.io/badge/python-3.9-blue">
