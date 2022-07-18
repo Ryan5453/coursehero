@@ -1,0 +1,15 @@
+FROM python:3.9
+
+RUN apt-get update
+RUN apt-get install ffmpeg libsm6 libxext6  -y
+
+COPY requirements.txt /celery/requirements.txt
+RUN pip install -r /celery/requirements.txt
+
+COPY config.yaml /celery/config.yaml
+COPY ./worker /celery/worker
+COPY ./common /celery/common
+
+WORKDIR /celery
+
+ENTRYPOINT celery --broker=redis://redis:6379 -A worker.tasks worker -P eventlet -c 1000

@@ -1,0 +1,16 @@
+FROM python:3.9
+
+RUN apt-get update
+RUN apt-get install ffmpeg libsm6 libxext6  -y
+
+COPY requirements.txt /coursehero/requirements.txt
+RUN pip install -r /coursehero/requirements.txt
+
+COPY config.yaml /coursehero/config.yaml
+COPY ./api /coursehero/api
+COPY ./common /coursehero/common
+COPY ./worker /coursehero/worker
+
+WORKDIR /coursehero
+
+ENTRYPOINT uvicorn api:app --host 0.0.0.0 --port 8000

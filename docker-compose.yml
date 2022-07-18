@@ -1,0 +1,30 @@
+version: "3" 
+
+services:
+  redis:
+    image: redis:6.2
+
+  flower:
+    build:
+      context: .
+      dockerfile: Flower_Dockerfile
+    ports:
+      - "5555:5555"
+    depends_on:
+      - redis
+
+  celery:
+    build:
+      context: .
+      dockerfile: Worker_Dockerfile
+    depends_on:
+      - redis
+
+  api:
+    build:
+      context: .
+      dockerfile: API_Dockerfile
+    ports:
+      - "9000:8000"
+    depends_on:
+      - celery

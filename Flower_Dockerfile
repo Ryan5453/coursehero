@@ -1,0 +1,5 @@
+FROM python:3.9
+
+RUN pip install flower redis
+
+ENTRYPOINT celery --broker=redis://redis:6379 flower
