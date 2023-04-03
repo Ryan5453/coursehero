@@ -21,7 +21,9 @@
 </p>
 
 ## What is this?
-This is a backend api that used to allow you to download coursehero documents (up to 9 pages) for free. It downloaded the previews and patched all the unblured images together to create one pdf. Coursehero has since changed their preview method and this no longer works. I spent a lot of time on this and I think the code quality is pretty good, so I thought I'd share it.
+
+This is an HTTP API that previously allowed you to download unblured CourseHero documents (up to 9 pages) for completely free. CourseHero has changed their method of previewing document, so this no longer works. I decided to open source this since it may be of some use to someone, someday.
 
 ## Credits
+
 This project was inspired by [daijro's](https://github.com/daijro) [CourseHeroUnblur](https://github.com/daijro/CourseHeroUnblur) project. It shares a lot of similarities with that project, however this project was written from scratch with the exception of a tiny bit of processing logic.
