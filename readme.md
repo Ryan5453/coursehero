@@ -1,5 +1,5 @@
 <h1 align="center">
-    coursehero downloader (broken)
+    Broken CourseHero Downloader
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 
 ## What is this?
 
-This is an HTTP API that previously allowed you to download unblured CourseHero documents (up to 9 pages) for completely free. CourseHero has changed their method of previewing document, so this no longer works. I decided to open source this since it may be of some use to someone, someday.
+This is an HTTP API that previously allowed you to download unblured CourseHero documents (up to 9 pages) for completely free. CourseHero has changed their method of previewing documents, so this no longer works. I decided to open source this since it may be of some use to someone, someday.
 
 ## Credits
 
